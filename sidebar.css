@@ -1,0 +1,20 @@
+.brand { width: 52px; height: 52px; display: grid; place-items: center; border-radius: 50%; margin-bottom: 3px; transition: background .2s; }
+.brand:hover, .nav-link:hover, .account-card:hover { background: #181818; }
+.primary-nav { display: flex; flex-direction: column; align-items: flex-end; width: 100%; }
+.nav-link { position: relative; display: flex; align-items: center; gap: 22px; width: 216px; height: 50px; padding: 0 18px; border-radius: 28px; font-size: 20px; transition: background .2s; }
+.nav-link.active { font-weight: 700; }
+.nav-icon { width: 26px; height: 26px; }
+.nav-link b { position: absolute; left: 33px; top: 5px; min-width: 16px; padding: 2px 4px; border-radius: 10px; color: white; background: #1d9bf0; font-size: 11px; text-align: center; }
+.post-button, .subscribe-button { border: 0; cursor: pointer; color: #fff; background: #1d9bf0; font-weight: 700; transition: background .2s, transform .2s; }
+.post-button:hover, .subscribe-button:hover, .mini-post:hover { background: #1a8cd8; transform: translateY(-1px); }
+.post-button { width: 215px; height: 52px; border-radius: 28px; margin-top: 12px; font-size: 17px; }
+.account-card { margin-top: auto; width: 235px; min-height: 58px; border: 0; color: #e7e9ea; background: transparent; display: flex; align-items: center; gap: 10px; padding: 8px; border-radius: 30px; cursor: pointer; text-align: left; }
+.account-copy { display: flex; flex-direction: column; flex: 1; gap: 3px; }
+.account-copy small { color: #71767b; }
+.more-dots { width: 20px; height: 20px; color: #e7e9ea; }
+.avatar { width: 40px; height: 40px; flex: 0 0 40px; display: grid; place-items: center; border-radius: 50%; color: #fff; font-weight: 700; background: #334155; overflow: hidden; }
+.avatar-you { background: linear-gradient(135deg, #f97316, #7c3aed); }
+.avatar-mrbeast { background: linear-gradient(135deg, #f5d0a9, #3299dc); color: #18344b; }
+.avatar-cat { background: #f0c36b; font-size: 22px; }
+.avatar-sky { background: #62b5dc; font-size: 23px; }
+.avatar.large { width: 68px; height: 68px; flex-basis: 68px; font-size: 22px; border: 4px solid #000; }

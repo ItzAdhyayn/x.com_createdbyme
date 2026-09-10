@@ -1,0 +1,18 @@
+* { box-sizing: border-box; }
+html { background: #000; }
+body { margin: 0; color: #e7e9ea; background: #000; font-family: Arial, Helvetica, sans-serif; font-size: 15px; }
+button, input { font: inherit; }
+button, a { -webkit-tap-highlight-color: transparent; }
+a { color: inherit; text-decoration: none; }
+.icon-sprite { position: absolute; width: 0; height: 0; overflow: hidden; }
+.nav-icon, .utility-icon, .action-icon, .post-icon, .search-icon, .x-logo { fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.9; }
+.nav-icon, .utility-icon, .action-icon, .post-icon, .search-icon { display: block; }
+.x-logo { fill: currentColor; stroke: none; width: 31px; height: 31px; }
+.app-shell { width: 1265px; max-width: 100%; margin: 0 auto; display: grid; grid-template-columns: 275px 575px 350px; min-height: 100vh; }
+.sidebar { border-right: 1px solid #2f3336; }
+.sidebar-inner { position: sticky; top: 0; min-height: 100vh; padding: 3px 18px 15px 0; display: flex; flex-direction: column; align-items: flex-end; }
+.main-content { border-right: 1px solid #2f3336; min-width: 0; }
+.search-side { padding: 4px 0 30px 26px; }
+@media (max-width: 1090px) { .app-shell { grid-template-columns: 88px minmax(500px, 600px) 330px; justify-content: center; } .sidebar-inner { align-items: center; padding-right: 0; } .nav-link { width: 52px !important; justify-content: center; } .nav-link > span:last-of-type, .account-copy, .more-dots { display: none; } .post-button { width: 52px !important; padding: 0 !important; font-size: 0; } .post-button:after { content: "＋"; font-size: 23px; } .account-card { width: 52px !important; justify-content: center; } }
+@media (max-width: 760px) { .app-shell { grid-template-columns: 68px minmax(0, 1fr); } .search-side { display: none; } .sidebar-inner { padding: 3px 0; } .main-content { border-right: 0; } }
+@media (max-width: 500px) { .app-shell { grid-template-columns: 54px minmax(0, 1fr); } .sidebar-inner { padding: 3px 0; } .post { padding: 12px; } .composer { padding: 12px; } .feed-tab { width: 44%; } }
