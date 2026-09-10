@@ -1,0 +1,42 @@
+.feed-header { height: 53px; position: sticky; top: 0; z-index: 2; display: flex; align-items: stretch; border-bottom: 1px solid #2f3336; background: rgba(0,0,0,.82); backdrop-filter: blur(12px); }
+.feed-tab { width: 45%; display: grid; place-items: center; position: relative; color: #71767b; font-weight: 700; }
+.feed-tab:hover { background: #181818; color: #e7e9ea; }
+.feed-tab.selected { color: #e7e9ea; }
+.feed-tab.selected:after { content: ""; position: absolute; bottom: 0; width: 52px; height: 4px; border-radius: 4px; background: #1d9bf0; }
+.settings-button { margin-left: auto; width: 53px; color: #e7e9ea; background: transparent; border: 0; cursor: pointer; }
+.utility-icon { width: 19px; height: 19px; }
+.settings-button:hover { background: #181818; }
+.composer, .post { display: flex; gap: 12px; padding: 12px 16px; border-bottom: 1px solid #2f3336; }
+.composer { min-height: 108px; }
+.composer-body, .post-body { flex: 1; min-width: 0; }
+.composer-input { display: block; min-height: 43px; padding: 8px 0; color: #71767b; font-size: 20px; outline: 0; }
+.composer-input:focus { color: #e7e9ea; }
+.composer-footer { display: flex; align-items: center; justify-content: space-between; }
+.composer-tools { display: flex; gap: 11px; color: #1d9bf0; }
+.composer-tools button, .post-actions button { border: 0; background: transparent; color: inherit; cursor: pointer; }
+.action-icon { width: 19px; height: 19px; }
+.composer-tools button:hover, .post-actions button:hover { color: #1d9bf0; }
+.mini-post { padding: 8px 17px; border: 0; border-radius: 20px; color: #061018; background: #8ecdf7; font-weight: 700; cursor: pointer; }
+.post { padding-top: 14px; padding-bottom: 9px; transition: background .2s; }
+.post:hover { background: #080808; }
+.post-meta { display: flex; align-items: center; gap: 5px; color: #71767b; white-space: nowrap; overflow: hidden; }
+.post-meta strong { color: #e7e9ea; overflow: hidden; text-overflow: ellipsis; }
+.verified { width: 16px; height: 16px; color: #000; fill: #1d9bf0; stroke: #1d9bf0; }
+.verified .check { fill: none; stroke: #000; stroke-width: 2; }
+.post-more { margin-left: auto; color: #71767b; border: 0; background: transparent; cursor: pointer; }
+.post p { margin: 4px 0 11px; line-height: 1.35; }
+.post p a, .show-more { color: #1d9bf0; }
+.post p a:hover, .show-more:hover { text-decoration: underline; }
+.giveaway-card, .meme-card { border: 1px solid #2f3336; border-radius: 16px; overflow: hidden; }
+.giveaway-card { min-height: 82px; display: flex; align-items: center; gap: 14px; padding: 12px 16px; background: linear-gradient(105deg, #17212b, #1d3550); }
+.giveaway-card .money { width: 48px; height: 48px; display: grid; place-items: center; border-radius: 50%; color: #0b3c20; background: #55e391; font-size: 27px; font-weight: 800; }
+.giveaway-card div:nth-child(2) { display: flex; flex-direction: column; gap: 5px; }.giveaway-card small { color: #aab8c4; }.giveaway-card > span { margin-left: auto; color: #aab8c4; }
+.meme-card { height: 210px; position: relative; display: grid; place-items: center; text-align: center; font-weight: 800; }
+.fridge-meme { background: linear-gradient(90deg, #252a2d 0 48%, #111 48% 52%, #252a2d 52%); }
+.fridge-door { width: 125px; height: 132px; display: grid; place-items: center; color: #aeb7bd; border: 5px solid #515961; background: linear-gradient(135deg, #b1bac0, #3a4145); font-size: 19px; letter-spacing: 2px; text-shadow: 2px 2px #222; }
+.fridge-door small { font-size: 12px; color: #282d30; letter-spacing: 0; }.meme-caption { position: absolute; left: 0; right: 0; padding: 8px; color: white; font-size: 16px; text-shadow: 2px 2px #000; }.meme-caption.top { top: 0; }.meme-caption.bottom { bottom: 0; }
+.shortcut-meme { height: 150px; padding: 24px; color: #fff; background: radial-gradient(circle at 75% 25%, #f6d365 0 7%, transparent 8%), linear-gradient(135deg, #1f2937, #374151 60%, #111827); font-size: 22px; }.shortcut-meme strong { display: block; margin-top: 30px; color: #fbbf24; font-size: 14px; }
+.post-actions { display: flex; justify-content: space-between; max-width: 470px; margin-top: 7px; color: #71767b; }
+.post-actions button { display: inline-flex; align-items: center; gap: 4px; font-size: 14px; }
+.post-icon { width: 18px; height: 18px; }
+.views-icon { font-size: 17px; line-height: 1; }

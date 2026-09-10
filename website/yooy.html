@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home / X</title>
+  <link rel="stylesheet" href="page.css">
+  <link rel="stylesheet" href="sidebar.css">
+  <link rel="stylesheet" href="main_content.css">
+  <link rel="stylesheet" href="search_side.css">
+</head>
+<body>
+  <!-- Reusable inline SVG icons keep the page dependency-free and crisp at every size. -->
+  <svg class="icon-sprite" aria-hidden="true">
+    <symbol id="icon-home" viewBox="0 0 24 24"><path d="M4 10.5 12 4l8 6.5V20a1 1 0 0 1-1 1h-5v-6h-4v6H5a1 1 0 0 1-1-1v-9.5Z"/></symbol>
+    <symbol id="icon-search" viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></symbol>
+    <symbol id="icon-bell" viewBox="0 0 24 24"><path d="M18 9a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9ZM10 21h4"/></symbol>
+    <symbol id="icon-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 20c.3-3.4 2.3-5 6-5s5.7 1.6 6 5M17 11a3 3 0 1 0-1-5.8M17 15c2.5.2 3.8 1.8 4 4"/></symbol>
+    <symbol id="icon-chat" viewBox="0 0 24 24"><path d="M20 11.5a8 8 0 0 1-8 8 9 9 0 0 1-4.2-1L3 20l1.5-4.3A8 8 0 1 1 20 11.5Z"/></symbol>
+    <symbol id="icon-grok" viewBox="0 0 24 24"><path d="m5 5 14 14M19 5 5 19"/><circle cx="12" cy="12" r="9"/></symbol>
+    <symbol id="icon-bookmark" viewBox="0 0 24 24"><path d="M6 4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18l-6-4-6 4V4Z"/></symbol>
+    <symbol id="icon-verified" viewBox="0 0 24 24"><path d="m12 2 2 1.5 2.5-.2 1.1 2.3 2.2 1.1-.2 2.5 1.5 2-1.5 2 .2 2.5-2.2 1.1-1.1 2.3-2.5-.2-2 1.5-2-1.5-2.5.2-1.1-2.3-2.2-1.1.2-2.5-1.5-2 1.5-2-.2-2.5 2.2-1.1 1.1-2.3 2.5.2L12 2Z"/><path class="check" d="m8 12 2.5 2.5L16 9"/></symbol>
+    <symbol id="icon-profile" viewBox="0 0 24 24"><circle cx="12" cy="7" r="4"/><path d="M4 22c.5-4.5 3.2-7 8-7s7.5 2.5 8 7"/></symbol>
+    <symbol id="icon-more" viewBox="0 0 24 24"><circle cx="5" cy="12" r="1.5"/><circle cx="12" cy="12" r="1.5"/><circle cx="19" cy="12" r="1.5"/></symbol>
+    <symbol id="icon-image" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9" r="1.5"/><path d="m4 18 5-5 3 3 2-2 6 5"/></symbol>
+    <symbol id="icon-poll" viewBox="0 0 24 24"><path d="M5 19V9M12 19V5M19 19v-7"/></symbol>
+    <symbol id="icon-smile" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 14s1.3 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></symbol>
+    <symbol id="icon-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/></symbol>
+    <symbol id="icon-location" viewBox="0 0 24 24"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="icon-settings" viewBox="0 0 24 24"><path d="M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8Z"/><path d="m19 13 2-1-2-1-.4-2 1.3-1.7-1.4-1.4-1.7 1.3-2-.4-1-2-1 .2-1 1.8-2 .4-1.7-1.3-1.4 1.4L6.1 9l-.4 2-2 1 2 1 .4 2-1.3 1.7 1.4 1.4 1.7-1.3 2 .4 1 2 1-.2 1-1.8 2-.4 1.7 1.3 1.4-1.4-1.3-1.7.4-2Z"/></symbol>
+    <symbol id="icon-heart" viewBox="0 0 24 24"><path d="M20.8 8.7c0 5.3-8.8 10.3-8.8 10.3S3.2 14 3.2 8.7A4.7 4.7 0 0 1 12 6a4.7 4.7 0 0 1 8.8 2.7Z"/></symbol>
+    <symbol id="icon-repeat" viewBox="0 0 24 24"><path d="M17 2l4 4-4 4M3 11V9a3 3 0 0 1 3-3h15M7 22l-4-4 4-4M21 13v2a3 3 0 0 1-3 3H3"/></symbol>
+    <symbol id="icon-share" viewBox="0 0 24 24"><path d="m12 16 4-4-4-4M16 12H4M20 5v14"/></symbol>
+  </svg>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="sidebar-inner">
+        <a class="brand" href="#" aria-label="X home">
+          <svg class="x-logo" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.657l-5.214-6.817-5.953 6.817H1.694l7.73-8.835L1.27 2.25h6.826l4.713 6.231 5.435-6.231Zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77Z"/>
+          </svg>
+        </a>
+        <nav class="primary-nav" aria-label="Primary navigation">
+          <a class="nav-link active" href="#"><svg class="nav-icon"><use href="#icon-home"/></svg><span>Home</span></a>
+          <a class="nav-link" href="#"><svg class="nav-icon"><use href="#icon-search"/></svg><span>Explore</span></a>
+          <a class="nav-link notification-link" href="#"><svg class="nav-icon"><use href="#icon-bell"/></svg><span>Notifications</span><b>7</b></a>
+          <a class="nav-link" href="#"><svg class="nav-icon"><use href="#icon-users"/></svg><span>Follow</span></a>
+          <a class="nav-link" href="#"><svg class="nav-icon"><use href="#icon-chat"/></svg><span>Chat</span></a>
+          <a class="nav-link" href="#"><svg class="nav-icon"><use href="#icon-grok"/></svg><span>Grok</span></a>
+          <a class="nav-link" href="#"><svg class="nav-icon"><use href="#icon-bookmark"/></svg><span>Bookmarks</span></a>
+          <a class="nav-link" href="#"><svg class="nav-icon"><use href="#icon-verified"/></svg><span>Premium</span></a>
+          <a class="nav-link" href="#"><svg class="nav-icon"><use href="#icon-profile"/></svg><span>Profile</span></a>
+          <a class="nav-link" href="#"><svg class="nav-icon"><use href="#icon-more"/></svg><span>More</span></a>
+        </nav>
+        <button class="post-button" type="button">Post</button>
+        <button class="account-card" type="button">
+          <span class="avatar avatar-you">A</span>
+          <span class="account-copy"><strong>Adhyayn Sharma</strong><small>@adhyaynsharma</small></span>
+          <svg class="more-dots" aria-hidden="true"><use href="#icon-more"/></svg>
+        </button>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="feed-header">
+        <a class="feed-tab selected" href="#">For you</a>
+        <a class="feed-tab" href="#">Following</a>
+        <button class="settings-button" type="button" aria-label="Timeline settings"><svg class="utility-icon"><use href="#icon-settings"/></svg></button>
+      </header>
+
+      <section class="composer">
+        <span class="avatar avatar-you">A</span>
+        <div class="composer-body">
+          <label class="composer-input" contenteditable="true" role="textbox" aria-label="Post text">What is happening?!</label>
+          <div class="composer-footer">
+            <div class="composer-tools" aria-label="Post attachments">
+              <button type="button" aria-label="Add image"><svg class="action-icon"><use href="#icon-image"/></svg></button><button type="button" aria-label="Add GIF">GIF</button>
+              <button type="button" aria-label="Add poll"><svg class="action-icon"><use href="#icon-poll"/></svg></button><button type="button" aria-label="Add emoji"><svg class="action-icon"><use href="#icon-smile"/></svg></button>
+              <button type="button" aria-label="Schedule post"><svg class="action-icon"><use href="#icon-calendar"/></svg></button><button type="button" aria-label="Add location"><svg class="action-icon"><use href="#icon-location"/></svg></button>
+            </div>
+            <button class="mini-post" type="button">Post</button>
+          </div>
+        </div>
+      </section>
+
+      <article class="post">
+        <span class="avatar avatar-mrbeast">MB</span>
+        <div class="post-body">
+          <div class="post-meta"><strong>MrBeast</strong><svg class="verified"><use href="#icon-verified"/></svg><span>@MrBeast</span><span>·</span><span>2h</span><button class="post-more" aria-label="More"><svg class="utility-icon"><use href="#icon-more"/></svg></button></div>
+          <p>Giving away <strong>$1,000</strong> to one lucky person! 🎉<br><br>Click here to enter — no purchase necessary. <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener">click here</a></p>
+          <div class="giveaway-card"><div class="money">$</div><div><strong>YOU COULD WIN $1,000</strong><small>Tap the link above to watch the entry video</small></div><span>↗</span></div>
+          <div class="post-actions"><button aria-label="Reply"><svg class="post-icon"><use href="#icon-chat"/></svg><span>1.8K</span></button><button aria-label="Repost"><svg class="post-icon"><use href="#icon-repeat"/></svg><span>326</span></button><button aria-label="Like"><svg class="post-icon"><use href="#icon-heart"/></svg><span>9.4K</span></button><button aria-label="Views"><span class="views-icon">▥</span><span>186K</span></button><button aria-label="Share"><svg class="post-icon"><use href="#icon-share"/></svg></button></div>
+        </div>
+      </article>
+
+      <article class="post">
+        <span class="avatar avatar-cat">😼</span>
+        <div class="post-body">
+          <div class="post-meta"><strong>Internet Hall of Fame</strong><svg class="verified"><use href="#icon-verified"/></svg><span>@InternetH0F</span><span>·</span><span>5h</span><button class="post-more" aria-label="More"><svg class="utility-icon"><use href="#icon-more"/></svg></button></div>
+          <p>Me opening the fridge for the 14th time hoping new food spawned.</p>
+          <div class="meme-card fridge-meme"><div class="meme-caption top">ME: I’M NOT HUNGRY</div><div class="fridge-door">FRIDGE<br><small>empty</small></div><div class="meme-caption bottom">ALSO ME 30 SECONDS LATER</div></div>
+          <div class="post-actions"><button aria-label="Reply"><svg class="post-icon"><use href="#icon-chat"/></svg><span>824</span></button><button aria-label="Repost"><svg class="post-icon"><use href="#icon-repeat"/></svg><span>74</span></button><button aria-label="Like"><svg class="post-icon"><use href="#icon-heart"/></svg><span>6.1K</span></button><button aria-label="Views"><span class="views-icon">▥</span><span>91K</span></button><button aria-label="Share"><svg class="post-icon"><use href="#icon-share"/></svg></button></div>
+        </div>
+      </article>
+
+      <article class="post">
+        <span class="avatar avatar-sky">☁</span>
+        <div class="post-body">
+          <div class="post-meta"><strong>Daily Memes</strong><span>@dailymemes</span><span>·</span><span>1h</span><button class="post-more" aria-label="More"><svg class="utility-icon"><use href="#icon-more"/></svg></button></div>
+          <p>That one friend who says “I know a shortcut”:</p>
+          <div class="meme-card shortcut-meme"><div>“Trust me bro”</div><strong>ARRIVING IN 3-5 BUSINESS DAYS</strong></div>
+          <div class="post-actions"><button aria-label="Reply"><svg class="post-icon"><use href="#icon-chat"/></svg><span>502</span></button><button aria-label="Repost"><svg class="post-icon"><use href="#icon-repeat"/></svg><span>43</span></button><button aria-label="Like"><svg class="post-icon"><use href="#icon-heart"/></svg><span>4.2K</span></button><button aria-label="Views"><span class="views-icon">▥</span><span>58K</span></button><button aria-label="Share"><svg class="post-icon"><use href="#icon-share"/></svg></button></div>
+        </div>
+      </article>
+    </main>
+
+    <aside class="search-side">
+      <label class="search-box"><svg class="search-icon"><use href="#icon-search"/></svg><input type="search" placeholder="Search"></label>
+      <section class="side-card profile-card">
+        <div class="profile-cover"></div><div class="profile-info"><span class="avatar avatar-you large">A</span><button class="edit-profile" type="button">Edit profile</button><h2>Adhyayn Sharma</h2><p>@adhyaynsharma</p><p class="muted">Building things on the internet ✨</p><div class="follow-stats"><b>142 <small>Following</small></b><b>28 <small>Followers</small></b></div></div>
+      </section>
+      <section class="side-card premium-card"><h2>Subscribe to Premium</h2><p>Subscribe to unlock new features and if eligible, receive a share of revenue.</p><button class="subscribe-button" type="button">Subscribe</button></section>
+      <section class="side-card trends"><div class="card-heading"><h2>What’s happening</h2><svg class="utility-icon"><use href="#icon-more"/></svg></div><div class="trend"><small>Trending in India</small><strong>#ItsAMedicalMiracle</strong><small>12.4K posts</small></div><div class="trend"><small>Trending in India</small><strong>#NayyirNavelli</strong><small>8,921 posts</small></div><div class="trend"><small>Technology · Trending</small><strong>OpenAI</strong><small>45.2K posts</small></div><a class="show-more" href="#">Show more</a></section>
+      <footer class="footer-links">Terms of Service &nbsp; Privacy Policy &nbsp; Cookie Policy<br>Accessibility &nbsp; Ads info &nbsp; More ···<br><span>© 2026 X Corp.</span></footer>
+    </aside>
+  </div>
+</body>
+</html>
